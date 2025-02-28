@@ -1,0 +1,20 @@
+services:
+  - name: backend
+    type: web
+    dockerfilePath: ./Dockerfile
+    ports:
+      - 4000
+    mounts:
+      - path: /usr/nodeapp
+        source: .
+      - path: /usr/nodeapp/dist
+        source: /usr/nodeapp/dist
+      - path: /var/run/docker.sock
+        source: /var/run/docker.sock
+    envVars:
+      - key: PORT
+        value: 4000
+    dependsOn:
+      - cpp
+      - java
+      - python

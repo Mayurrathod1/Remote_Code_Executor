@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": [
+    "node_modules", // Exclude dependencies
+    "dist", // Exclude build output
+    "**/*.spec.ts", // Exclude spec files
+    "**/*.test.ts" // Exclude test files
+  ]
+}
