@@ -20,10 +20,10 @@ Remote Code Executor is a web-based application that enables users to write, exe
 
 Before setting up the project locally, ensure you have the following installed:
 
-- Node.js (v14.x or later)
-- Docker
-- MongoDB
-
+- Node.js (v14.x or later)
+- Docker
+- MongoDB
+  
 ## Installation
 
 1. **Clone the Repository**:
@@ -49,8 +49,8 @@ Before setting up the project locally, ensure you have the following installed:
 
 4. **Configure Environment Variables**:
 
-   - Create a `.env` file in the `backend` directory.
-   - Add the following variables:
+   - Create a `.env` file in the `backend` directory.
+   - Add the following variables:
 
      ```env
      PORT=5000
